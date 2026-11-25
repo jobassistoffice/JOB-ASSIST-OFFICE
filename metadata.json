@@ -1,0 +1,6 @@
+{
+  "name": "Lao Service Registration Form",
+  "description": "A comprehensive, beautifully-styled Lao-language service registration form with a responsive UI, conditional sub-forms, and file-upload integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

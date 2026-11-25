@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Lao:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Lao", "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Map Blue to Indigo to apply the theme colors across the whole existing codebase */
+  --color-blue-50: var(--color-indigo-50);
+  --color-blue-100: var(--color-indigo-100);
+  --color-blue-200: var(--color-indigo-200);
+  --color-blue-300: var(--color-indigo-300);
+  --color-blue-400: var(--color-indigo-400);
+  --color-blue-500: var(--color-indigo-500);
+  --color-blue-600: var(--color-indigo-600);
+  --color-blue-700: var(--color-indigo-700);
+  --color-blue-800: var(--color-indigo-800);
+  --color-blue-900: var(--color-indigo-900);
+  --color-blue-950: var(--color-indigo-950);
+}
+
+/* Global Overrides for inputs matching Design HTML spec */
+input[type="text"], 
+input[type="number"], 
+input[type="tel"], 
+input[type="email"], 
+input[type="date"], 
+select, 
+textarea {
+  background-color: #f8fafc !important; /* bg-slate-50 */
+  border: 2px solid #f1f5f9 !important; /* border-slate-100 */
+  border-radius: 0.75rem !important; /* rounded-xl */
+  padding: 0.75rem 1rem !important; /* px-4 py-3 */
+  font-size: 0.875rem !important; /* text-sm */
+  font-weight: 700 !important; /* font-bold */
+  color: #0f172a !important; /* text-slate-900 */
+  outline: none !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="tel"]:focus, 
+input[type="email"]:focus, 
+input[type="date"]:focus, 
+select:focus, 
+textarea:focus {
+  border-color: #4f46e5 !important; /* border-indigo-600 */
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1) !important; /* focus:ring-indigo-500/10 */
+  background-color: #ffffff !important;
+}
+
+/* Global card enhancements matching Design HTML */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem !important; /* rounded-3xl */
+}
+
+.border-slate-200 {
+  border-color: #e2e8f0 !important; /* border-slate-200 */
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Style for field tags and labels */
+label {
+  font-size: 11px !important;
+  font-weight: 800 !important; /* font-black */
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
